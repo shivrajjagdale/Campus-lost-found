@@ -67,6 +67,86 @@ nav {
     font-weight: bold;
     color: #173b8f;
 }
+.hero {
+    padding: 55px 20px;
+    background: #eef4ff;
+}
+
+.hero h2 {
+    margin-top: 0;
+    color: #173b8f;
+}
+
+.hero p {
+    margin: 12px 0 25px;
+    color: #555;
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-box button {
+    margin: 0;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 45px 20px;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    background: white;
+    width: 320px;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.item-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.item-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.item-card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .item-card {
+        width: 100%;
+    }
+    }
 
 .nav-links a {
     text-decoration: none;
