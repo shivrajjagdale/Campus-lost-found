@@ -61,6 +61,24 @@
 <footer>
     <p>© 2026 Campus Lost & Found Management System</p>
 </footer>
+    <script>
+function searchItems() {
+    let input = document.querySelector(".search-box input").value.toLowerCase();
+    let cards = document.querySelectorAll(".item-card");
+
+    cards.forEach(function(card) {
+        let text = card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+
+document.querySelector(".search-box button").addEventListener("click", searchItems);
+    </script>
 
 </body>
 </html>
